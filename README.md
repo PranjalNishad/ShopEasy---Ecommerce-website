@@ -1,6 +1,6 @@
 # 🛍️ ShopEasy — React E-commerce Website
 
-![ShopEasy Hero Banner](./screenshots/hero.png)
+![ShopEasy Hero Banner](./screenshots/overview.png)
 
 ## 📘 Overview
 
