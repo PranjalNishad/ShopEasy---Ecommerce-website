@@ -1,0 +1,132 @@
+.product-list-container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1rem;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  z-index: 1;
+}
+
+.product-list-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.header-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #ffffff, #f0f9ff, #e0f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.product-count {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.no-products {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.no-products-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-products h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.no-products p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Enhanced grid for larger screens */
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list-container {
+    padding: 1rem;
+  }
+  
+  .header-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .header-content p {
+    font-size: 1.1rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .no-products {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .no-products-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .header-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .header-content p {
+    font-size: 1rem;
+  }
+  
+  .product-count {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
