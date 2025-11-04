@@ -23,7 +23,7 @@ function Header({ cartItemCount, onCartClick, onLogoClick, onCategoryFilter, onS
   }
 
   return (
-    <header className="header">
+    <header className="header sticky top-0 z-[1000] border-b-[4px] border-b-[rgba(102,126,234,0.3)] border-t-[2px] border-t-[rgba(102,126,234,0.2)] backdrop-blur-[15px] shadow-[0_8px_40px_rgba(0,0,0,0.3)] bg-[linear-gradient(135deg,#1a202c,#2d3748,#4a5568)]">
       <div className="header-container">
         {/* Logo */}
         <div className="logo" onClick={onLogoClick}>
