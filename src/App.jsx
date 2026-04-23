@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import Header from "./components/layout/Header";
-import Hero from "./components/sections/Hero";
-import ProductList from "./components/ui/ProductList";
-import Cart from "./pages/Cart";
-import productsData from "./data/products.json";
-import "./App.css";
+import Header from "@/components/layout/Header";
+import Hero from "@/components/layout/Hero";
+import ProductList from "@/components/product/ProductList";
+import Cart from "@/pages/Cart";
+import productsData from "@/data/products.json";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -104,7 +103,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="min-h-screen bg-linear-to-br from-primary via-accent to-secondary text-white">
       <Header
         cartItemCount={getTotalItems()}
         onCartClick={() => setShowCart(!showCart)}
