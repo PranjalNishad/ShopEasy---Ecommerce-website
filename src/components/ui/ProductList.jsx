@@ -1,5 +1,5 @@
-import ProductCard from './ProductCard'
-import './ProductList.css'
+import ProductCard from "./ProductCard";
+import "./ProductList.css";
 
 function ProductList({ products, onAddToCart, selectedCategory }) {
   return (
@@ -7,19 +7,21 @@ function ProductList({ products, onAddToCart, selectedCategory }) {
       <div className="product-list-header">
         <div className="header-content">
           <h2>
-            {selectedCategory === 'all' ? 'All Products' : `${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)}`}
+            {selectedCategory === "all"
+              ? "All Products"
+              : `${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)}`}
           </h2>
           <p>
-            {selectedCategory === 'all' 
-              ? 'Discover amazing products at great prices' 
-              : `Explore our ${selectedCategory} collection`
-            }
+            {selectedCategory === "all"
+              ? "Discover amazing products at great prices"
+              : `Explore our ${selectedCategory} collection`}
           </p>
           <div className="product-count">
-            {products.length} {products.length === 1 ? 'product' : 'products'} found
+            {products.length} {products.length === 1 ? "product" : "products"}{" "}
+            found
           </div>
         </div>
-        
+
         {products.length === 0 && (
           <div className="no-products">
             <div className="no-products-icon">🔍</div>
@@ -28,10 +30,10 @@ function ProductList({ products, onAddToCart, selectedCategory }) {
           </div>
         )}
       </div>
-      
+
       {products.length > 0 && (
         <div className="product-grid">
-          {products.map(product => (
+          {products.map((product) => (
             <ProductCard
               key={product.id}
               product={product}
@@ -41,7 +43,7 @@ function ProductList({ products, onAddToCart, selectedCategory }) {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default ProductList
+export default ProductList;

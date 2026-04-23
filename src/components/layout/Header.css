@@ -265,15 +265,15 @@
     padding: 1rem 1.5rem;
     gap: 1.5rem;
   }
-  
+
   .search-section {
     margin: 0 1rem;
   }
-  
+
   .nav {
     gap: 0.4rem;
   }
-  
+
   .nav-link {
     padding: 0.6rem 0.8rem;
     font-size: 0.8rem;
@@ -287,18 +287,18 @@
     padding: 1rem;
     min-height: auto;
   }
-  
+
   .logo {
     min-width: auto;
     order: 1;
   }
-  
+
   .search-section {
     order: 2;
     width: 100%;
     margin: 0;
   }
-  
+
   .nav {
     order: 3;
     gap: 0.3rem;
@@ -306,7 +306,7 @@
     justify-content: center;
     width: 100%;
   }
-  
+
   .nav-link {
     padding: 0.5rem 0.8rem;
     font-size: 0.75rem;
@@ -314,32 +314,32 @@
     min-width: 0;
     justify-content: center;
   }
-  
+
   .nav-icon {
     font-size: 0.8rem;
   }
-  
+
   .cart-section {
     order: 4;
     width: 100%;
     justify-content: center;
   }
-  
+
   .logo-text h1 {
     font-size: 1.6rem;
   }
-  
+
   .logo-icon {
     width: 45px;
     height: 45px;
     font-size: 2.2rem;
   }
-  
+
   .search-input {
     padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
   }
-  
+
   .search-button {
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
@@ -351,82 +351,51 @@
     padding: 0.8rem;
     gap: 0.8rem;
   }
-  
+
   .nav {
     gap: 0.2rem;
   }
-  
+
   .nav-link {
     padding: 0.4rem 0.6rem;
     font-size: 0.7rem;
   }
-  
+
   .nav-link span:not(.nav-icon) {
     display: none;
   }
-  
+
   .nav-icon {
     font-size: 1rem;
   }
-  
+
   .logo-text h1 {
     font-size: 1.4rem;
   }
-  
+
   .logo-tagline {
     font-size: 0.7rem;
   }
-  
+
   .logo-icon {
     width: 40px;
     height: 40px;
     font-size: 2rem;
   }
-  
+
   .search-input {
     padding: 0.7rem 1rem;
     font-size: 0.8rem;
   }
-  
+
   .search-button {
     padding: 0.7rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   .cart-button {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
     min-width: 120px;
-  }
-}
-
-@media (max-width: 360px) {
-  .header-container {
-    padding: 0.6rem;
-  }
-  
-  .nav-link {
-    padding: 0.3rem 0.4rem;
-    font-size: 0.6rem;
-  }
-  
-  .nav-icon {
-    font-size: 0.9rem;
-  }
-  
-  .logo-text h1 {
-    font-size: 1.2rem;
-  }
-  
-  .logo-icon {
-    width: 35px;
-    height: 35px;
-    font-size: 1.8rem;
-  }
-  
-  .cart-button {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.8rem;
-    min-width: 100px;
   }
 }

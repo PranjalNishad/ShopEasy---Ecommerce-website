@@ -1,23 +1,24 @@
-import './Hero.css'
+import "./Hero.css";
 
 function Hero({ onCategoryFilter }) {
   const handleCardClick = (category) => {
-    onCategoryFilter(category)   // same as dropdown
-  }
-  
+    onCategoryFilter(category); // same as dropdown
+  };
+
   return (
     <section className="hero">
       <div className="hero-background">
         <div className="hero-overlay"></div>
       </div>
-      
+
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
             Welcome to <span className="highlight">ShopEasy</span>
           </h1>
           <p className="hero-subtitle">
-            Discover amazing products at unbeatable prices. Shop with confidence and style.
+            Discover amazing products at unbeatable prices. Shop with confidence
+            and style.
           </p>
           <div className="hero-features">
             <div className="feature">
@@ -36,17 +37,17 @@ function Hero({ onCategoryFilter }) {
           <div className="hero-buttons">
             <a href="#main-container" className="btn-primary">
               <span className="btn-icon">🛍️</span>
-                Shop Now
-              </a>
+              Shop Now
+            </a>
             <button className="btn-secondary">
               <span className="btn-icon">📱</span>
               View Categories
             </button>
           </div>
         </div>
-        
+
         <div className="hero-image">
-          <div 
+          <div
             className="floating-card card-1"
             onClick={() => handleCardClick("electronics")}
           >
@@ -59,7 +60,7 @@ function Hero({ onCategoryFilter }) {
             </div>
           </div>
 
-          <div 
+          <div
             className="floating-card card-2"
             onClick={() => handleCardClick("fashion")}
           >
@@ -72,7 +73,7 @@ function Hero({ onCategoryFilter }) {
             </div>
           </div>
 
-          <div 
+          <div
             className="floating-card card-3"
             onClick={() => handleCardClick("jewelery")}
           >
@@ -86,7 +87,7 @@ function Hero({ onCategoryFilter }) {
           </div>
         </div>
       </div>
-      
+
       <div className="hero-scroll">
         <div className="scroll-indicator">
           <span>Scroll to explore</span>
@@ -94,7 +95,7 @@ function Hero({ onCategoryFilter }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
